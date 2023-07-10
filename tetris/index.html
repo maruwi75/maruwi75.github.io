@@ -1,0 +1,832 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animatelo/1.0.3/animatelo.min.js"></script>
+  
+</head>
+
+<body translate="no">
+  <div id="outer-board">
+    <div id="board"> 
+      <div id="banner">
+        <div> 
+          <div id="message">Tetris</div>
+          <div id="new-game">Tap here to start!</div>
+        </div>
+      </div>
+      <div class="empty" style="left: 0px; top: 0px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 28px; top: 0px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 56px; top: 0px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 84px; top: 0px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 112px; top: 0px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 140px; top: 0px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 168px; top: 0px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 196px; top: 0px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 224px; top: 0px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 252px; top: 0px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 0px; top: 28px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 28px; top: 28px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 56px; top: 28px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 84px; top: 28px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 112px; top: 28px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 140px; top: 28px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 168px; top: 28px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 196px; top: 28px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 224px; top: 28px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 252px; top: 28px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 0px; top: 56px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 28px; top: 56px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 56px; top: 56px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 84px; top: 56px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 112px; top: 56px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 140px; top: 56px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 168px; top: 56px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 196px; top: 56px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 224px; top: 56px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 252px; top: 56px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 0px; top: 84px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 28px; top: 84px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 56px; top: 84px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 84px; top: 84px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 112px; top: 84px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 140px; top: 84px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 168px; top: 84px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 196px; top: 84px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 224px; top: 84px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 252px; top: 84px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 0px; top: 112px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 28px; top: 112px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 56px; top: 112px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 84px; top: 112px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 112px; top: 112px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 140px; top: 112px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 168px; top: 112px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 196px; top: 112px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 224px; top: 112px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 252px; top: 112px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 0px; top: 140px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 28px; top: 140px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 56px; top: 140px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 84px; top: 140px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 112px; top: 140px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 140px; top: 140px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 168px; top: 140px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 196px; top: 140px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 224px; top: 140px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 252px; top: 140px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 0px; top: 168px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 28px; top: 168px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 56px; top: 168px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 84px; top: 168px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 112px; top: 168px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 140px; top: 168px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 168px; top: 168px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 196px; top: 168px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 224px; top: 168px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 252px; top: 168px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 0px; top: 196px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 28px; top: 196px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 56px; top: 196px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 84px; top: 196px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 112px; top: 196px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 140px; top: 196px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 168px; top: 196px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 196px; top: 196px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 224px; top: 196px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 252px; top: 196px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 0px; top: 224px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 28px; top: 224px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 56px; top: 224px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 84px; top: 224px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 112px; top: 224px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 140px; top: 224px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 168px; top: 224px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 196px; top: 224px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 224px; top: 224px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 252px; top: 224px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 0px; top: 252px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 28px; top: 252px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 56px; top: 252px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 84px; top: 252px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 112px; top: 252px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 140px; top: 252px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 168px; top: 252px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 196px; top: 252px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 224px; top: 252px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 252px; top: 252px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 0px; top: 280px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 28px; top: 280px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 56px; top: 280px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 84px; top: 280px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 112px; top: 280px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 140px; top: 280px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 168px; top: 280px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 196px; top: 280px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 224px; top: 280px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 252px; top: 280px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 0px; top: 308px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 28px; top: 308px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 56px; top: 308px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 84px; top: 308px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 112px; top: 308px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 140px; top: 308px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 168px; top: 308px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 196px; top: 308px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 224px; top: 308px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 252px; top: 308px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 0px; top: 336px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 28px; top: 336px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 56px; top: 336px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 84px; top: 336px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 112px; top: 336px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 140px; top: 336px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 168px; top: 336px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 196px; top: 336px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 224px; top: 336px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 252px; top: 336px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 0px; top: 364px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 28px; top: 364px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 56px; top: 364px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 84px; top: 364px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 112px; top: 364px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 140px; top: 364px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 168px; top: 364px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 196px; top: 364px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 224px; top: 364px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 252px; top: 364px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 0px; top: 392px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 28px; top: 392px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 56px; top: 392px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 84px; top: 392px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 112px; top: 392px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 140px; top: 392px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 168px; top: 392px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 196px; top: 392px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 224px; top: 392px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 252px; top: 392px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 0px; top: 420px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 28px; top: 420px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 56px; top: 420px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 84px; top: 420px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 112px; top: 420px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 140px; top: 420px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 168px; top: 420px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 196px; top: 420px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 224px; top: 420px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+      <div class="empty" style="left: 252px; top: 420px;">
+        <div class="inner-tile">
+          <div class="inner-inner-tile"></div>
+        </div>
+      </div>
+    </div>
+    <div id="stats">
+      <div class="labels">Scores
+        <div class="frame" id="score">0        </div>
+      </div>
+      <button class="btn btn-rounded" id="left"> <i class="fa fas fa-arrow-left"></i></button>
+      <button class="btn btn-rounded" id="right"><i class="fa fas fa-arrow-right"></i></button>
+      <button class="btn btn-rounded" id="rotate"> <i class="fa fas fa-undo flipx"></i></button>
+      <button class="btn btn-rounded" id="down"> <i class="fa fas fa-arrow-down"></i></button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body></html>
