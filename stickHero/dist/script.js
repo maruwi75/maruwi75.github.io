@@ -10,6 +10,30 @@ Follow me on twitter for more: https://twitter.com/HunorBorbely
 
 */
 
+
+var stopFunc = function(e) { e.preventDefault(); e.stopPropagation(); return false; };
+var all = document.querySelectorAll('*');
+for (var idx in all) {
+	var el = all[idx];
+	if (el.removeEventListener) {
+		el.removeEventListener('click', stopFunc, true); // stopFunc이 동일하게 구현되어있다는 가정하에
+	}
+}
+
+
+var envTarget = "";
+if (navigator.userAgent.match(/Android/i)) {
+  // JavaScript is running on an Android device
+  envTarget = "App";
+  console.log('Running on Android');
+} else {
+  // JavaScript is running on a desktop
+  envTarget = "Pc";
+  console.log('Running on desktop');
+}
+
+
+
 // Extend the base functionality of JavaScript
 Array.prototype.last = function () {
   return this[this.length - 1];
@@ -168,7 +192,10 @@ window.addEventListener("keydown", function (event) {
   }
 });
 
-window.addEventListener("mousedown", function (event) {
+
+console.log(envTarget == "Pc" ? "mouseDown":"touchstart");
+
+window.addEventListener(envTarget == "Pc" ? "mousedown":"touchstart", function (event) {
   if (phase == "waiting") {
     lastTimestamp = undefined;
     introductionElement.style.opacity = 0;
@@ -177,7 +204,7 @@ window.addEventListener("mousedown", function (event) {
   }
 });
 
-window.addEventListener("mouseup", function (event) {
+window.addEventListener(envTarget == "Pc" ? "mouseup":"touchend", function (event) {
   if (phase == "stretching") {
     phase = "turning";
   }

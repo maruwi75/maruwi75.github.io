@@ -1,0 +1,23 @@
+{
+  "name": "maru-game",
+  "version": "1.0.0",
+  "description": "maru game test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maruwi75/maruwi75.github.io.git"
+  },
+  "keywords": [
+    "game",
+    "kid"
+  ],
+  "author": "maruwi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maruwi75/maruwi75.github.io/issues"
+  },
+  "homepage": "https://github.com/maruwi75/maruwi75.github.io#readme"
+}
