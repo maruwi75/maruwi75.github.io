@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Virtual Joystick Example</title>
+  <script src="virtualjoystick.js"></script>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <script>
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+
+    var joystick = new VirtualJoystick({
+      container: canvas,
+      mouseSupport: true,
+      stationaryBase: true,
+      baseX: canvas.width / 2,
+      baseY: canvas.height / 2
+    });
+
+    function gameLoop() {
+      // Use joystick properties like joystick.deltaX(), joystick.deltaY(), etc.
+      // to control your game logic
+
+      // Clear canvas
+      context.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Draw joystick
+      joystick.draw();
+
+      // Request next frame
+      requestAnimationFrame(gameLoop);
+    }
+
+    // Start the game loop
+    gameLoop();
+  </script>
+</body>
+</html>
+In this example, we include the Virtual Joystick library (virtualjoystick.js) and create a new instance of VirtualJoystick. We configure the joystick's options and then use the joystick's properties like joystick.deltaX() and joystick.deltaY() to control our game logic. Finally, we implement a game loop using requestAnimationFrame() to continuously update and draw the joystick.
+
+Remember to download the virtualjoystick.js file from the Virtual Joystick library repository and adjust the script tag's src attribute accordingly.
+
+Note that this is just one example, and there are other libraries and implementations available as well. You can explore different libraries based on your specific needs and requirements for your game.
+
+
+
+
+
+
